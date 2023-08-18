@@ -1,0 +1,15 @@
+    body {
+        background-color: lightgray;
+    }
+    /* Inside phone.css */
+    @media (max-width: 600px) {
+        /* Your phone-specific styles here */
+        body {
+            background-color: red;
+        }
+        /* .calculator{
+            width: 400px;
+            height:600px;
+        } */
+        /* ... other styles ... */
+    }

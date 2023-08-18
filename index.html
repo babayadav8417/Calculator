@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+  </head>
+  <body>
+    <section class="calculator">
+      <form>
+        <input type="text" class="screen" id="display" readonly/>
+      </form>
+      <div class="buttons">
+        <button data-value="*"  class="btn btn-yellow"  onclick="appendDisplay('*')">*</button>
+        <button data-value="/" class="btn btn-yellow"  onclick="appendDisplay('/')">/</button>
+        <button data-value="-" class="btn btn-yellow"  onclick="appendDisplay('-')">-</button>
+        <button data-value="+" class="btn btn-yellow"  onclick="appendDisplay('+')">+</button>
+
+        <button data-value="9" class="btn btn-grey" onclick="appendDisplay('9')" >9</button>
+        <button data-value="8" class="btn btn-grey" onclick="appendDisplay('8')" >8</button>
+        <button data-value="7" class="btn btn-grey" onclick="appendDisplay('7')" >7</button>
+        <button data-value="6" class="btn btn-grey" onclick="appendDisplay('6')" >6</button>
+        <button data-value="5" class="btn btn-grey" onclick="appendDisplay('5')" >5</button>
+        <button data-value="4" class="btn btn-grey" onclick="appendDisplay('4')" >4</button>
+        <button data-value="3" class="btn btn-grey" onclick="appendDisplay('3')" >3</button>
+        <button data-value="2" class="btn btn-grey" onclick="appendDisplay('2')" >2</button>
+        <button data-value="1" class="btn btn-grey" onclick="appendDisplay('1')" >1</button>
+        <button data-value="0" class="btn btn-grey" onclick="appendDisplay('0')" >0</button>
+        <button data-value="." class="btn btn-grey" onclick="appendDisplay('.')" >.</button>
+
+        <button data-value="=" class="btn btn-equal" onclick="calculate()" >=</button>
+        <button data-value="C" class="btn btn-clear" onclick="clearDisplay()">C</button>
+        <button data-value="DEL" class="btn btn-delete" onclick="deleteLast()">DEL</button>
+      </div>
+      <script src="script.js"></script>
+    </section>
+  </body>
+</html>
